@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.cellphone-dimensions {
+  width: 375px;
+  height: 812px;
+}
+
+.whatsapp-bg{
+  background-image: url("/public/whatsapp-background-image.jpg");
+  background-repeat: no-repeat;
+}
+
+.whatsapp-background-color {
+  background-color: #008069;
+}
