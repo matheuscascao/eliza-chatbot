@@ -3,12 +3,13 @@ import OpenAI from "openai";
 
 
 const openai = new OpenAI({
-  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  apiKey: process.env.API_KEY,
   dangerouslyAllowBrowser: true
 });
 
 export const queryChatGPT = async (prompt: string) => {
   try {
+    console.log(process.env.API_KEY)
     const completion = await openai.chat.completions.create({
       messages: [{ role: 'user', content: prompt }],
       model: 'gpt-3.5-turbo',
